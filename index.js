@@ -26,7 +26,6 @@ box.onmouseup = function() {
     for (let i = 0; i < item.length; i++) {
         const location = item[i].getBoundingClientRect()
         if (get_location(location, dragBox.getBoundingClientRect()) == true) {
-            console.log(item[i], 1)
             item[i].checked = true
         }
     }
