@@ -40,7 +40,7 @@ function get_location(item, drag) {
     const width_max = Math.max(item.x + item.width, drag.x + drag.width)
     const hieght_max = Math.max(item.y + item.height, drag.y + drag.height)
     const width_min = Math.min(item.x, drag.x)
-    const height_min = Math.min(item.y, item.y)
+    const height_min = Math.min(item.y, drag.y)
     if (width_max - width_min <= item.width + drag.width && hieght_max - height_min <= item.height + drag.height) {
         return true
     } else {
